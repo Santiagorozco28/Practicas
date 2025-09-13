@@ -60,7 +60,7 @@ fun ISRCalculator() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        // Campo para el sueldo
+        //Campo para el sueldo
         OutlinedTextField(
             value = sueldo,
             onValueChange = { sueldo = it },
