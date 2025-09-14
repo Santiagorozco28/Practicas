@@ -95,7 +95,7 @@ fun ISRCalculator() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Campo para mostrar ISR calculado
+        //ISR calculado
         OutlinedTextField(
             value = isr,
             onValueChange = { },
@@ -106,7 +106,7 @@ fun ISRCalculator() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        // Campo para mostrar sueldo neto
+        //sueldo neto
         OutlinedTextField(
             value = sueldoNeto,
             onValueChange = { },
@@ -117,7 +117,6 @@ fun ISRCalculator() {
     }
 }
 
-// Función para calcular ISR con la tabla 2025
 fun calcularISR(sueldo: Double): Double {
     val tablaISR = listOf(
         ISRRow(0.01, 8952.49, 0.00, 1.92),
