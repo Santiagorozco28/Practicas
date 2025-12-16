@@ -45,7 +45,6 @@ fun TeamDetailScreen(
 ) {
     val selectedTeam by viewModel.selectedTeam.collectAsState()
 
-    // 2. Disparar la búsqueda del equipo al iniciar la pantalla
     LaunchedEffect(teamId) {
         if (teamId.isNotEmpty()) {
             viewModel.getTeamById(teamId)
