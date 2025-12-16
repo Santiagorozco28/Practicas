@@ -43,7 +43,6 @@ fun TeamDetailScreen(
     navController: NavController,
     viewModel: NflAppViewModel = hiltViewModel()
 ) {
-    // 1. Obtener el estado del equipo seleccionado
     val selectedTeam by viewModel.selectedTeam.collectAsState()
 
     // 2. Disparar la búsqueda del equipo al iniciar la pantalla
